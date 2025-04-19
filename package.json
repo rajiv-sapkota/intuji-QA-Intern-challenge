@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:run": "cypress run",
+    "test:staging": "cypress run --env environment=staging",
+    "test:prod": "cypress run --env environment=prod"
   },
   "keywords": [],
   "author": "",
@@ -14,3 +16,5 @@
     "cypress-file-upload": "^5.0.8"
   }
 }
+
+
