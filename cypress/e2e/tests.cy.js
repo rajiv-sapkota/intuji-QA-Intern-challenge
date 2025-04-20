@@ -39,7 +39,7 @@ describe("Test cases for student registration form DEMOQA", () => {
   });
 
   // POM implementation
-  it.only("TC102:should validate if form can be validated with only required fields", () => {
+  it("TC102:should validate if form can be validated with only required fields", () => {
     const validatePage = new ValidatePage(); //creating instance of class
     validatePage.fillFirstName(testData.firstName) //enter first name
     validatePage.fillLastName(testData.lastName);//enter lastname
